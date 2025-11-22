@@ -119,6 +119,12 @@ console.log(res);
 
 // Get ELement by queryselector:-
 
-const res=document.querySelector("#head")
+/* const res=document.querySelector("#head")
+console.log(res); */
+
+// Get Element By queryselectorall
+
+const res=document.querySelectorAll(".container")
 console.log(res);
+
 
