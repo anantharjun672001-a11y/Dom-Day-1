@@ -103,7 +103,7 @@ const res = document.getElementById("head")
 res.innerText="Hi"
 console.log(res)
 
-
+*/
 
 //Get Element By Class ;-
 
@@ -113,9 +113,9 @@ console.log(res)
 
 //Get Element By Tagname:-
 
-const res = document.getElementsByTagName("div")
+/* const res = document.getElementsByTagName("div")
 console.log(res);
+ */
 
-*/
 
 // Get 
