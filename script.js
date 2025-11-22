@@ -107,15 +107,15 @@ console.log(res)
 
 //Get Element By Class ;-
 
-const res = document.getElementsByClassName("container")
+/* const res = document.getElementsByClassName("container")
 console.log(res)
-
+ */
 
 //Get Element By Tagname:-
 
-/* const res = document.getElementsByTagName("div")
+const res = document.getElementsByTagName("div")
 console.log(res);
- */
+
 
 
 // Get 
