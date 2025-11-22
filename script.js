@@ -32,7 +32,7 @@ document.body.appendChild(division) */
 
 //Example : Creating Multiple elements with setAttributes
 
-const heading=document.createElement("h1");
+/* const heading=document.createElement("h1");
 const division=document.createElement("div");
 const paragraph=document.createElement("p");
 const breakTag=document.createElement("br");
@@ -46,4 +46,38 @@ paragraph.setAttribute("style","color:blue;font-size:30px;text-align:center;")
 heading.classList.add("text-center","text-purple-500")
 
 division.append(heading,breakTag,paragraph)
-document.body.appendChild(division)
+document.body.appendChild(division) */
+
+//Example: Session Task
+
+const heading=document.createElement("h1")
+const heading1=document.createElement("h1")
+const header=document.createElement("header")
+const navBar=document.createElement("nav")
+const unorder=document.createElement("ul")
+const list1=document.createElement("li")
+const list2=document.createElement("li")
+const list3=document.createElement("li")
+const main=document.createElement("main")
+const sectionPart=document.createElement("section")
+
+heading.innerHTML="<i>Creating Multiple Element</i>"
+list1.innerText="About"
+list2.innerText="Pricing"
+list3.innerText="Contact"
+heading1.innerHTML="<i>Above all are Dynamically</i>"
+
+
+heading.classList.add("text-center","text-3xl","text-red-700")
+heading1.classList.add("text-center","text-3xl","text-red-700")
+unorder.classList.add("flex", "justify-center","space-evenly", "gap-8")
+list1.classList.add("list-none","text-black","cursor-pointer")
+list2.classList.add("list-none","text-black","cursor-pointer")
+list3.classList.add("list-none","text-black","cursor-pointer")
+
+unorder.append(list1,list2,list3)
+navBar.appendChild(unorder)
+header.appendChild(navBar)
+sectionPart.appendChild(heading1)
+main.appendChild(sectionPart)
+document.body.append(heading,header,main)
