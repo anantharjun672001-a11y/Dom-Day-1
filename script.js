@@ -50,7 +50,7 @@ document.body.appendChild(division) */
 
 //Example: Session Task
 
-const heading=document.createElement("h1")
+/* const heading=document.createElement("h1")
 const heading1=document.createElement("h1")
 const header=document.createElement("header")
 const navBar=document.createElement("nav")
@@ -80,4 +80,19 @@ navBar.appendChild(unorder)
 header.appendChild(navBar)
 sectionPart.appendChild(heading1)
 main.appendChild(sectionPart)
-document.body.append(heading,header,main)
+document.body.append(heading,header,main) */
+
+
+//creating multiple elements dynamically
+
+function dynamic(tagname,content,attrname,attrvalue){
+        const ele =document.createElement(tagname);
+        ele.innerHTML = content;
+        ele.setAttribute(attrname,attrvalue);
+        return ele;
+}
+
+const heading = dynamic("h1","Dynamic Creation","class","head");
+
+document.body.append(heading);
+
