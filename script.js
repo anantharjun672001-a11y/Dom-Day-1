@@ -12,8 +12,20 @@
 //syntax: document.body.append(variablename)
 //syntax: variablename.appendchild(variablename)
 
-//Example
+//Example : Creating Single element
+
+/* const heading=document.createElement("h1")
+heading.innerHTML="<i>Hello World</i>"
+document.body.append(heading) */
+
+//Example : Creating Multiple elements
 
 const heading=document.createElement("h1")
-heading.innerHTML="<i>Hello World</i>"
-document.body.append(heading)
+const division=document.createElement("div")
+const paragraph=document.createElement("p")
+
+heading.innerHTML="<i>Hello World</i>";
+paragraph.innerText="DOM CONTENT";
+
+division.append(heading,paragraph)
+document.body.appendChild(division)
