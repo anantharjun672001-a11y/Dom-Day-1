@@ -85,7 +85,7 @@ document.body.append(heading,header,main) */
 
 //creating multiple elements dynamically
 
-function dynamic(tagname,content,attrname,attrvalue){
+/* function dynamic(tagname,content,attrname,attrvalue){
         const ele =document.createElement(tagname);
         ele.innerHTML = content;
         ele.setAttribute(attrname,attrvalue);
@@ -96,3 +96,26 @@ const heading = dynamic("h1","Dynamic Creation","class","head");
 
 document.body.append(heading);
 
+ 
+
+//Get Element By Id :-
+const res = document.getElementById("head")
+res.innerText="Hi"
+console.log(res)
+
+
+
+//Get Element By Class ;-
+
+const res = document.getElementsByClassName("container")
+console.log(res)
+
+
+//Get Element By Tagname:-
+
+const res = document.getElementsByTagName("div")
+console.log(res);
+
+*/
+
+// Get 
