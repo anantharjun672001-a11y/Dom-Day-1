@@ -113,9 +113,12 @@ console.log(res)
 
 //Get Element By Tagname:-
 
-const res = document.getElementsByTagName("div")
+/* const res = document.getElementsByTagName("div")
+console.log(res);
+ */
+
+// Get ELement by queryselector:-
+
+const res=document.querySelector("#head")
 console.log(res);
 
-
-
-// Get 
