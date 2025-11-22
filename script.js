@@ -20,7 +20,7 @@ document.body.append(heading) */
 
 //Example : Creating Multiple elements
 
-const heading=document.createElement("h1")
+/* const heading=document.createElement("h1")
 const division=document.createElement("div")
 const paragraph=document.createElement("p")
 
@@ -28,4 +28,22 @@ heading.innerHTML="<i>Hello World</i>";
 paragraph.innerText="DOM CONTENT";
 
 division.append(heading,paragraph)
+document.body.appendChild(division) */
+
+//Example : Creating Multiple elements with setAttributes
+
+const heading=document.createElement("h1");
+const division=document.createElement("div");
+const paragraph=document.createElement("p");
+const breakTag=document.createElement("br");
+
+heading.innerHTML="Hello WOrld";
+paragraph.innerText="I am FIne";
+
+
+division.setAttribute("id","main");
+paragraph.setAttribute("style","color:blue;font-size:30px;text-align:center;")
+heading.classList.add("text-center","text-purple-500")
+
+division.append(heading,breakTag,paragraph)
 document.body.appendChild(division)
